@@ -1,4 +1,4 @@
-import { UserContextProvider, UserContext } from 'shared';
+import { UserContextProvider } from 'shared';
 import Routes from '@/app/routes/Routes.jsx';
 
 function App() {

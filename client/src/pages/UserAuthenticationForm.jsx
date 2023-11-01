@@ -27,8 +27,8 @@ export default function UserAuthenticationForm() {
   }
 
   return (
-    <div className="flex items-center bg-blue-50 h-screen">
-      <form className="w-64 mx-auto mb-12">
+    <div className="flex items-center bg-green-200 h-screen">
+      <form className="mx-auto mb-12 p-6 bg-white rounded-xl shadow-xl">
         {
           error.length ? (
             <div>
@@ -38,20 +38,20 @@ export default function UserAuthenticationForm() {
         }
         <input
           value={username}
-          className="w-full rounded-sm p-2 mb-2 border"
+          className="w-full rounded-xl p-2 mb-2 border"
           type="text"
           placeholder="username"
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           value={password}
-          className="w-full rounded-sm p-2 mb-2 border"
+          className="w-full rounded-xl p-2 mb-4 border"
           type="text"
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
         <button
-          className="bg-blue-500 text-white w-full rounded-sm p-2"
+          className="border border-blue-500 text-blue-500 w-full rounded-xl p-2"
           type="button"
           onClick={handleSubmit}
         >
@@ -67,7 +67,7 @@ export default function UserAuthenticationForm() {
                 <button
                   type="button"
                   onClick={() => setIsLogin(true)}
-                  className="ml-2 px-2 py-1 bg-blue-300 text-sm text-white rounded-xl"
+                  className="ml-2 px-2 py-1 bg-blue-400 text-sm text-white rounded-xl"
                 >Login here</button>
               </div>
             ) : (
@@ -76,7 +76,7 @@ export default function UserAuthenticationForm() {
                 <button
                   type="button"
                   onClick={() => setIsLogin(false)}
-                  className="ml-2 px-2 py-1 bg-blue-300 text-sm text-white rounded-xl"
+                  className="ml-2 px-2 py-1 bg-blue-400 text-sm text-white rounded-xl"
                 >
                   Register
                 </button>
